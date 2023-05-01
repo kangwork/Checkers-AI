@@ -5,19 +5,19 @@ A friendly AI will create the best move possible to play against you! (Game Tree
 This project is an implementation of an AI agent that solves endgame puzzles in the game of Checkers. The AI agent utilizes various algorithms, including minimax, alpha-beta pruning, and additional techniques, to find the best move possible given a specific puzzle configuration.
 
 ## Game Description
-Checkers is a classic 2-player board game played with distinct pieces. One player's pieces are black, and the other player's pieces are red. The game is typically played on an 8x8 chessboard, and the players take turns moving their pieces on the board.
+Checkers is a 2-player game played on an 8x8 chessboard.
 
-Moving and capturing pieces are governed by the game's rules. The version of Checkers implemented in this project is the Standard English Draughts, which includes mandatory captures. The objective of the game is for each player to capture all of their opponent's pieces. The game ends when one player has no pieces remaining or has no legal moves left. If it's a player's turn but they can't move any of their pieces, that player loses the game.
+- Players: One has black pieces, the other has red pieces.
+- Objective: Capture all opponent's pieces.
+- Game ends: when a player has no pieces or no legal moves.
+- Initial setup: 12 red and 12 black pieces on dark squares of the first three rows on each side. Red player moves first, then turns alternate.
 
-The initial setup of the game involves placing 12 red pieces and 12 black pieces on the dark squares of the board across the first three rows on each side. The red player makes the first move, and the players take turns moving their pieces diagonally on the board.
-
-Pieces can move in two ways:
-
-- Moving one space diagonally if the adjacent space is empty.
-- Moving two spaces diagonally if the adjacent space is occupied by the opponent, and the space beyond that is empty. In this case, the opponent's piece is captured.
-- If a move leads to a capture, and the moving piece ends up in a position where it can jump over another opponent's piece, the player has the option to continue moving and capture another piece. This sequence of moves can be non-linear and may involve multiple captures.
-
-When a piece reaches the opponent's end of the board, it becomes a "king" and gains the ability to move both forward and backward.
+- Moves: 
+  - Pieces move diagonally: one space if adjacent is empty, two spaces to capture opponent's piece.
+  - Capturing involves jumping over opponent's piece onto an empty space.
+  - Multiple captures can be made in a single move, including non-linear and multiple jumps.
+  - If a player has a capturing opportunity, they must make a capture (force jump rule).
+  - When a piece reaches opponent's end, it becomes a "king" and can move both forward and backward.
 
 ## Puzzle Configuration
 The project focuses on solving endgame puzzles in Checkers. An endgame puzzle refers to a specific board configuration where a winning solution is guaranteed, provided the right set of moves is executed. These puzzles are challenging as they often require non-obvious moves or a large number of moves to reach a winning state.
