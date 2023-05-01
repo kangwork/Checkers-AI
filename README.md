@@ -1,10 +1,10 @@
-# Checkers-AI
+# Checkers-Solver-AI
 A friendly AI will create the best move possible to play against you! (Game Tree Search!)
 
-Checkers Solver AI
+## Description
 This project is an implementation of an AI agent that solves endgame puzzles in the game of Checkers. The AI agent utilizes various algorithms, including minimax, alpha-beta pruning, and additional techniques, to find the best move possible given a specific puzzle configuration.
 
-Game Description
+## Game Description
 Checkers is a classic 2-player board game played with distinct pieces. One player's pieces are black, and the other player's pieces are red. The game is typically played on an 8x8 chessboard, and the players take turns moving their pieces on the board.
 
 Moving and capturing pieces are governed by the game's rules. The version of Checkers implemented in this project is the Standard English Draughts, which includes mandatory captures. The objective of the game is for each player to capture all of their opponent's pieces. The game ends when one player has no pieces remaining or has no legal moves left. If it's a player's turn but they can't move any of their pieces, that player loses the game.
@@ -13,13 +13,13 @@ The initial setup of the game involves placing 12 red pieces and 12 black pieces
 
 Pieces can move in two ways:
 
-Moving one space diagonally if the adjacent space is empty.
-Moving two spaces diagonally if the adjacent space is occupied by the opponent, and the space beyond that is empty. In this case, the opponent's piece is captured.
-If a move leads to a capture, and the moving piece ends up in a position where it can jump over another opponent's piece, the player has the option to continue moving and capture another piece. This sequence of moves can be non-linear and may involve multiple captures.
+- Moving one space diagonally if the adjacent space is empty.
+- Moving two spaces diagonally if the adjacent space is occupied by the opponent, and the space beyond that is empty. In this case, the opponent's piece is captured.
+- If a move leads to a capture, and the moving piece ends up in a position where it can jump over another opponent's piece, the player has the option to continue moving and capture another piece. This sequence of moves can be non-linear and may involve multiple captures.
 
 When a piece reaches the opponent's end of the board, it becomes a "king" and gains the ability to move both forward and backward.
 
-Puzzle Configuration
+## Puzzle Configuration
 The project focuses on solving endgame puzzles in Checkers. An endgame puzzle refers to a specific board configuration where a winning solution is guaranteed, provided the right set of moves is executed. These puzzles are challenging as they often require non-obvious moves or a large number of moves to reach a winning state.
 
 The puzzle configurations are provided in text files, with each line representing a row from the Checkers board. The characters used in the text files represent different elements of the game:
@@ -43,7 +43,7 @@ For example, a puzzle layout may be represented as follows:
 
 In this case, the AI controls the red pieces, and it's the red player's turn to move.
 
-Input and Output Format
+## Input and Output Format
 The program takes two command-line arguments: the input file and the output file. The input file contains the board configuration for the puzzle, represented as text. The output file will store the resulting board layout after the AI agent's move.
 
 The board configuration is provided in the input file with each line representing a row of the Checkers board. The characters used in the configuration represent the elements of the game (red pieces, black pieces, red kings, black kings, and empty squares).
