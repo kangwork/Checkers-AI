@@ -32,14 +32,14 @@ The puzzle configurations are provided in text files, with each line representin
 
 For example, a puzzle layout may be represented as follows:
 
-........<br \>
-....b...<br \>
-.......R<br \>
-..b.b...<br \>
-...b...r<br \>
-........<br \>
-...r....<br \>
-....B...<br \>
+........<br />
+....b...<br />
+.......R<br />
+..b.b...<br />
+...b...r<br />
+........<br />
+...r....<br />
+....B...<br />
 
 In this case, the AI controls the red pieces, and it's the red player's turn to move.
 
