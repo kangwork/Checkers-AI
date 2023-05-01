@@ -24,22 +24,22 @@ The project focuses on solving endgame puzzles in Checkers. An endgame puzzle re
 
 The puzzle configurations are provided in text files, with each line representing a row from the Checkers board. The characters used in the text files represent different elements of the game:
 
-'r' denotes a red piece
-'b' denotes a black piece
-'R' denotes a red king
-'B' denotes a black king
-'.' (period character) denotes an empty square
+- 'r' denotes a red piece
+- 'b' denotes a black piece
+- 'R' denotes a red king
+- 'B' denotes a black king
+- '.' (period character) denotes an empty square
 
 For example, a puzzle layout may be represented as follows:
 
-........
-....b...
-.......R
-..b.b...
-...b...r
-........
-...r....
-....B...
+........<br \>
+....b...<br \>
+.......R<br \>
+..b.b...<br \>
+...b...r<br \>
+........<br \>
+...r....<br \>
+....B...<br \>
 
 In this case, the AI controls the red pieces, and it's the red player's turn to move.
 
@@ -52,7 +52,7 @@ The AI agent's move, resulting in a new board layout, is saved in the output fil
 
 To run the program, use the following command:
 
-python3 checkers.py <input file> <output file>
+`python3 checkers.py <input file> <output file>`
 
 For example, python3 checkers.py input1.txt output1.txt will take the board layout stored in input1.txt, apply the AI agent's move, and save the resulting board layout in output1.txt.
 
